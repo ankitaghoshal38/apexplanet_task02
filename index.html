@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY SECOND WEBPAGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <h1>Welcome to My Interactive Page</h1>
+    <p>Contact us, manage tasks, and enjoy a modern design</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grid-container">
+    <!-- Contact Form -->
+    <section id="contact" class="content">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Sidebar -->
+    <aside id="about" class="sidebar">
+      <!-- Alert Button -->
+      <div class="action-box">
+        <h2>Fun Action</h2>
+        <button id="alertButton">Click Me!</button>
+        <p>Click the button for a surprise alert 🎉</p>
+      </div>
+
+      <!-- To-Do List -->
+      <div class="todo-box">
+        <h2>My To-Do List</h2>
+        <div class="input-section">
+          <input type="text" id="taskInput" placeholder="Add a new task">
+          <button id="addTaskBtn">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Stunning Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
